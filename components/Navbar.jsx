@@ -9,27 +9,27 @@ export default function Navbar() {
             variants={navVariants}
             initial="hidden"
             whileInView="show"
-            className="py-3 relative">
-            <div className='absolute w-[20%] inset-0 gradient-01' />
+            className="relative">
+            <div className='absolute w-[50%] md:w-[60%] inset-0 gradient-01' />
 
-            <div className='xl:max-w-[1280px] w-full flex justify-between mx-auto'>
+            <div className='xl:max-w-[1280px] mx-auto w-full flex flex-col md:flex-row md:justify-between items-center'>
                 {/* LOGO */}
                 <Image src="/sultanlogo.svg"
                     width={462}
                     height={49}
-                    className='object-contain relative'
+                    className='object-contain relative pb-4 md:pb-0'
                     alt="search"
                 />
                 <motion.div
                     initial={{ y: 150, x: 300, opacity: 0, scale: 4 }}
                     animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
                     transition={{ duration: 2, delay: 2 }}
-                    className='absolute left-96 top-6'
+                    className='absolute sm:left-96 sm:top-6 left-80 top-5'
                 >
                     <Image src="/skulllogo.svg"
                         width={89}
                         height={86}
-                        className='object-contain left-96 top-6 animate-pulse'
+                        className='object-contain animate-pulse flex-shrink-0'
                         alt="skull"
                     />
                 </motion.div>
