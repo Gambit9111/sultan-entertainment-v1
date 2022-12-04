@@ -21,9 +21,9 @@ export default function Navbar() {
                     alt="search"
                 />
                 <motion.div
-                    initial={{ y: 150, x: 300, opacity: 0, scale: 4 }}
+                    initial={{ y: 150, x: -200, opacity: 0, scale: 6 }}
                     animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
-                    transition={{ duration: 2, delay: 2 }}
+                    transition={{ duration: 0.3, delay: 2 }}
                     className='absolute sm:left-96 sm:top-6 left-80 top-5'
                 >
                     <Image src="/skulllogo.svg"
@@ -38,28 +38,28 @@ export default function Navbar() {
                     <motion.div
                         initial={{ y: -150, opacity: 0, scale: 4 }}
                         animate={{ y: 0, opacity: 1, scale: 1 }}
-                        transition={{ duration: 2, delay: 2.5 }}
+                        transition={{ duration: 0.5, delay: 0.5 }}
                     >
                         <SocialIcon url="https://youtube.com/" fgColor='#7D7D7D' bgColor='transparent'/>
                     </motion.div>
                     <motion.div
                         initial={{ y: -150, opacity: 0, scale: 4 }}
                         animate={{ y: 0, opacity: 1, scale: 1 }}
-                        transition={{ duration: 2, delay: 3 }}
+                        transition={{ duration: 0.6, delay: 1 }}
                     >
                         <SocialIcon url="https://spotify.com/" fgColor='#7D7D7D' bgColor='transparent'/>
                     </motion.div>
                     <motion.div
                         initial={{ y: -150, opacity: 0, scale: 4 }}
                         animate={{ y: 0, opacity: 1, scale: 1 }}
-                        transition={{ duration: 2, delay: 3.5 }}
+                        transition={{ duration: 0.7, delay: 1.5 }}
                     >
                         <SocialIcon url="https://itunes.com/" fgColor='#7D7D7D' bgColor='transparent'/>
                     </motion.div>
                     <motion.div
                         initial={{ y: -150, opacity: 0, scale: 4 }}
                         animate={{ y: 0, opacity: 1, scale: 1 }}
-                        transition={{ duration: 2, delay: 4 }}
+                        transition={{ duration: 0.8, delay: 2 }}
                     >
                         <SocialIcon url="https://instagram.com/" fgColor='#7D7D7D' bgColor='transparent'/>
                     </motion.div>
