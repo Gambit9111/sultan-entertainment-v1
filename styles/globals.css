@@ -11,7 +11,7 @@
       }
 
     body {
-        @apply bg-[url('/bg.jpg')] bg-no-repeat bg-cover bg-fixed;
+        @apply bg-[url('/bg.jpg')] bg-cover bg-fixed;
     }
 }
 
